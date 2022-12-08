@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="icon" type="image/x-icon" href="./assets/img/pc/icons8-user-96.png">
+  <link rel="stylesheet" href="./assets/css/styles.css">
+
+  <!---------------------- for google font ------------------------------->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Klee+One&family=Raleway:wght@300;400;600&display=swap"
+    rel="stylesheet">
+
+  <!---------------------- for jquery ------------------------------->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  <!---------------------- for swiper ------------------------------------>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+
+  <!---------------------- scroll script --------------------------------->
+  <script>
+    $(document).ready(function () {
+      function fadeAnimation() {
+        $('.fadein').each(function () {
+          var bottom_element = $(this).offset().top + ($(window).height() / 3);
+          var bottom_window = $(window).scrollTop() + $(window).height();
+
+          if (bottom_window >= bottom_element) {
+            $(this).addClass('fade_on');
+          }
+        })
+      }
+      $(window).scroll(function () {
+        fadeAnimation();
+      });
+
+      // $(window).on('load', function () {
+      //   fadeAnimation();
+      // })
+      fadeAnimation();
+      // $('p-top__block').addClass('fade_on');
+    })
+  </script>
+</head>
+
+<body>
+  <div class="l-wrapper">
+    <header class="c-header" id="top">
+      <div class="c-header__block">
+        <div class="c-header__logo">Portfolio</div>
+      </div>
+    </header>
+
+    <nav class="c-nav">
+      <div class="c-nav__main">
+        <ul class="c-nav__list">
+          <li class="c-nav__item"><a href="./#service" class="c-nav__link">About</a></li>
+          <li class="c-nav__item"><a href="./#strength" class="c-nav__link">Skills</a></li>
+          <li class="c-nav__item"><a href="./#result" class="c-nav__link">Projects</a></li>
+          <li class="c-nav__item"><a href="./form.html" class="c-nav__link">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <main class="l-main">
+      <div class="c-section--margin60px"></div>
+      <!-- --------------------------------------------1.top--------------------------------------------- -->
+      <div class="c-section  c-section--top fadein" style="background-color:rgba(183, 196, 207, 0.6); ">
+        <div class="p-top ">
+          <!-- <div class="p-top__bkg"> -->
+          <!-- <div class="p-top__bkg--img">
+              <img src="./assets/img/pc/wallpaper.jpg" alt="">
+            </div> -->
+          <!-- </div> -->
+          <div class="c-section__main ">
+            <div class="c-section__head">
+              <div class="c-section__title"></div>
+            </div>
+            <div class="c-section__body">
+              <div class="p-top__block">
+                <div class="p-top__head">
+                  <div class="p-top__head--big">
+                    <div class="p-top__head--big--typed-out" id="typeout1"></div>
+                  </div>
+                </div>
+
+                <div class="p-top__head2">
+                  <div class="p-top__head2--small">
+                    <div class="p-top__head2--small--typed-out2" id="typeout2"></div>
+                  </div>
+                </div>
+
+                <div class="p-top__body">
+                  <ul class="p-top__list1" id="iconleft">
+                    <li class="p-top__list1--item"><img
+                        src="https://img.icons8.com/carbon-copy/40/000000/source-code.png" /></li>
+                    <li class="p-top__list1--item"><img
+                        src="https://img.icons8.com/carbon-copy/40/000000/android.png" /></li>
+                    <li class="p-top__list1--item"><img
+                        src="https://img.icons8.com/carbon-copy/40/000000/headphones--v2.png" /></li>
+                    <li class="p-top__list2--item"><img
+                        src="https://img.icons8.com/carbon-copy/40/000000/open-end-wrench.png" /></li>
+
+                    <li class="p-top__list1--item"><img
+                        src="https://img.icons8.com/carbon-copy/40/000000/workstation.png" /></li>
+                  </ul>
+                  <ul class="p-top__list2" id="iconright">
+                    <li class="p-top__list2--item"><img
+                        src="https://img.icons8.com/carbon-copy/40/000000/ping-pong.png" /></li>
+
+                    <li class="p-top__list2--item"><img
+                        src="https://img.icons8.com/carbon-copy/40/000000/german-shepherd.png" /></li>
+                    <li class="p-top__list1--item"><img src="https://img.icons8.com/carbon-copy/40/000000/music.png" />
+                    </li>
+
+                    <li class="p-top__list2--item"><img src="https://img.icons8.com/carbon-copy/40/000000/beer.png" />
+                    </li>
+                    <li class="p-top__list2--item"><img
+                        src="https://img.icons8.com/carbon-copy/40/000000/nintendo-switch-pro-controller.png" /></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- --------------------------------------------2.about--------------------------------------------- -->
+      <div class="c-section fadein" style="background-color: rgba(191, 195, 199, 0.6);">
+        <div class="p-about">
+          <div class="c-section__main">
+            <div class="c-section__head">
+              <div class="c-section__title">ABOUT
+                <div class="c-section__title--underline"></div>
+              </div>
+            </div>
+            <div class="c-section__body">
+              <div class="p-about__block">
+                <div class="p-about__box">
+                  <div class="p-about__head">
+                    <div class="p-about__head--title">Education</div>
+                  </div>
+                  <div class="p-about__body">
+                    <div class="p-about__para">
+                      <div class="p-about__para--title">2018 ~ 2020</div>
+                      <div class="p-about__para--subtitle">Master of Engineering</div>
+                      <div class="p-about__para--des">Hokkaido University</div>
+                    </div>
+                    <div class="p-about__para">
+                      <div class="p-about__para--title">2011 ~ 2016</div>
+                      <div class="p-about__para--subtitle">Bachelor of Engineering</div>
+                      <div class="p-about__para--des">Myanmar Maritime University</div>
+                    </div>
+                    <div class="p-about__para">
+                      <div class="p-about__para--title">2008 ~ 2010</div>
+                      <div class="p-about__para--subtitle">High School</div>
+                      <div class="p-about__para--des">BEHS (1) Latha, Yangon</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="p-about__box">
+                  <div class="p-about__head">
+                    <div class="p-about__head--title">Work Experiences</div>
+                  </div>
+                  <div class="p-about__body">
+                    <div class="p-about__para">
+                      <div class="p-about__para--title">2022 Sep ~ Present</div>
+                      <div class="p-about__para--subtitle">Egodiva Co.ltd</div>
+                      <div class="p-about__para--des">Web Coder</div>
+                    </div>
+                    <div class="p-about__para">
+                      <div class="p-about__para--title">2021 Apr ~ 2022 Mar</div>
+                      <div class="p-about__para--subtitle">AIM Co.Ltd (assigned at Subaru Techno Corporation)</div>
+                      <div class="p-about__para--des">CAE engineer/modeller</div>
+                    </div>
+                    <div class="p-about__para">
+                      <div class="p-about__para--title">2016 Mar ~ 2017 Apr</div>
+                      <div class="p-about__para--subtitle">Pacific International Lines Co.Ltd</div>
+                      <div class="p-about__para--des">Junior Mecahnical Engineer</div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- --------------------------------------------3.skills--------------------------------------------- -->
+      <div class="c-section fadein" style="background-color: rgba(199, 194, 191, 0.6);">
+        <div class="p-skills">
+          <div class="c-section__main">
+            <div class="c-section__head">
+              <div class="c-section__title">SKILLS
+                <div class="c-section__title--underline"></div>
+              </div>
+            </div>
+            <div class="c-section__body">
+              <div class="p-skills__block">
+                <div class="p-skills__box">
+                  <div class="p-skills__head">
+                    Expereince with ~
+                  </div>
+                  <ul class="p-skills__body">
+                    <li class="p-skills__body--item"><img src="https://img.icons8.com/color/50/000000/html-5--v1.png" />
+                      <div class="p-skills__body--label">HTML</div>
+                    </li>
+                    <li class="p-skills__body--item"><img src="https://img.icons8.com/color/50/000000/css3.png" />
+                      <div class="p-skills__body--label">CSS</div>
+                    </li>
+                    <li class="p-skills__body--item"><img src="https://img.icons8.com/color/50/000000/sass.png" />
+                      <div class="p-skills__body--label">SASS</div>
+                    </li>
+                    <li class="p-skills__body--item"><img src="https://img.icons8.com/ios/45/000000/jquery.png" />
+                      <div class="p-skills__body--label">jQuery</div>
+                    </li>
+                    <li class="p-skills__body--item"><img src="https://img.icons8.com/color/50/000000/git.png" />
+                      <div class="p-skills__body--label">Git</div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="p-skills__box">
+                  <div class="p-skills__head">
+                    Learning ~
+                  </div>
+                  <ul class="p-skills__body">
+                    <li class="p-skills__body--item"><img src="https://img.icons8.com/color/45/000000/bootstrap.png" />
+                      <div class="p-skills__body--label">Bootstrap</div>
+                    </li>
+                    <li class="p-skills__body--item"><img
+                        src="https://img.icons8.com/color/50/000000/javascript--v1.png" />
+                      <div class="p-skills__body--label">Javascript</div>
+                    </li>
+                    <li class="p-skills__body--item"><img src="https://img.icons8.com/color/50/000000/nodejs.png" />
+                      <div class="p-skills__body--label">Nodejs</div>
+                    </li>
+                    <li class="p-skills__body--item"><img src="https://img.icons8.com/office/43/000000/react.png" />
+                      <div class="p-skills__body--label">React</div>
+                    </li>
+                  </ul>
+                </div>
+
+                <!-- <div class="p-skills__box">
+                  <div class="p-skills__head">
+                    Expereince
+                  </div>
+                  <ul class="p-skills__body">
+                    <div class="swiper mySwiper">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <li class="p-skills__body--item"><img
+                              src="https://img.icons8.com/color/75/000000/html-5--v1.png" />
+                            <div class="p-skills__body--label">HTML</div>
+                          </li>
+                        </div>
+                        <div class="swiper-slide">
+                          <li class="p-skills__body--item"><img src="https://img.icons8.com/color/75/000000/css3.png" />
+                            <div class="p-skills__body--label">CSS</div>
+                          </li>
+                        </div>
+                        <div class="swiper-slide">
+                          <li class="p-skills__body--item"><img src="https://img.icons8.com/color/75/000000/sass.png" />
+                            <div class="p-skills__body--label">SASS</div>
+                          </li>
+                        </div>
+                        <div class="swiper-slide">
+                          <li class="p-skills__body--item"><img src="https://img.icons8.com/ios/70/000000/jquery.png" />
+                            <div class="p-skills__body--label">jQuery</div>
+                          </li>
+                        </div>
+                        <div class="swiper-slide">
+                          <li class="p-skills__body--item"><img src="https://img.icons8.com/color/75/000000/git.png" />
+                            <div class="p-skills__body--label">Git</div>
+                          </li>
+                        </div>
+                      </div>
+                    </div>
+                  </ul>
+                </div>
+
+                <div class="p-skills__box">
+                  <div class="p-skills__head">
+                    Learning
+                  </div>
+                  <ul class="p-skills__body">
+                    <div class="swiper mySwiper">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <li class="p-skills__body--item"><img
+                              src="https://img.icons8.com/color/75/000000/javascript--v1.png" />
+                            <div class="p-skills__body--label">Javascript</div>
+                          </li>
+                        </div>
+                        <div class="swiper-slide">
+                          <li class="p-skills__body--item"><img
+                              src="https://img.icons8.com/color/70/000000/bootstrap.png" />
+                            <div class="p-skills__body--label">Bootstrap</div>
+                          </li>
+                        </div>
+                        <div class="swiper-slide">
+                          <li class="p-skills__body--item"><img
+                              src="https://img.icons8.com/color/75/000000/nodejs.png" />
+                            <div class="p-skills__body--label">Nodejs</div>
+                          </li>
+                        </div>
+                        <div class="swiper-slide">
+                          <li class="p-skills__body--item"><img
+                              src="https://img.icons8.com/office/68/000000/react.png" />
+                            <div class="p-skills__body--label">React</div>
+                          </li>
+                        </div>
+
+                      </div>
+                    </div>
+                  </ul>
+                </div> -->
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- --------------------------------------------4.projects--------------------------------------------- -->
+      <div class="c-section fadein" style="background-color: rgba(207, 193, 182, 0.6);">
+        <div class="p-project">
+          <div class="c-section__main">
+            <div class="c-section__head">
+              <div class="c-section__title">PROJECTS
+                <div class="c-section__title--underline"></div>
+              </div>
+
+            </div>
+            <div class="c-section__body">
+              <div class="p-project__block">
+                <div class="p-project__head">
+                  <div class="p-project__head--title">Animated buttons</div>
+                </div>
+                <div class="swiper mySwiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="slide">
+                        <a href="#" onclick="return false" class="btn bgleft_right"><span>背景が流れる（→　→）</span></a>
+                        <a href="#" onclick="return false" class="btn bgleft_left"><span>背景が流れる（→　←）</span></a>
+                        <a href="#" onclick="return false" class="btn bgright_left"><span>背景が流れる（←　←）</span></a>
+                        <a href="#" onclick="return false" class="btn bgright_right"><span>背景が流れる（→　←）</span></a>
+
+                        <a href="#" onclick="return false" class="btn bgtop_bot"><span>背景が流れる（↓　↓）</span></a>
+                        <a href="#" onclick="return false" class="btn bgtop_top"><span>背景が流れる（↓　↑）</span></a>
+                        <a href="#" onclick="return false" class="btn bgbot_top"><span>背景が流れる（↑　↑）</span></a>
+                        <a href="#" onclick="return false" class="btn bgbot_bot"><span>背景が流れる（↑　↓）</span></a>
+
+                        <a href="#" onclick="return false" class="btn bgcenter_edge"><span>背景が流れる（←｜→）</span></a>
+                        <a href="#" onclick="return false" class="btn bgcenter_edge2"><span>背景が流れる（↑ー↓）</span></a>
+                        <a href="#" onclick="return false" class="btn bgcenter_edge3"><span>背景が流れ（↑←↓→）</span></a>
+
+                        <a href="#" onclick="return false" class="btn bgskew"><span>背景が流れる（斜め）</span></a>
+
+                        <a href="#" onclick="return false" class="btn bgleft_dia"><span>背景が流れる（/→ →）</span></a>
+                        <a href="#" onclick="return false" class="btn bgleft_dia2"><span>背景が流れる（/→ ←）</span></a>
+                        <a href="#" onclick="return false" class="btn bgright_dia"><span>背景が流れる（← ←\）</span></a>
+                        <a href="#" onclick="return false" class="btn bgright_dia2"><span>背景が流れる（→ ←\）</span></a>
+
+                        <a href="http://localhost:3000/2022/button_animation/" class="more">more buttons here</a>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="slide">
+
+                      </div>
+                    </div>
+                    <div class="swiper-slide">Slide 3</div>
+                    <div class="swiper-slide">Slide 4</div>
+                    <div class="swiper-slide">Slide 5</div>
+                  </div>
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev"></div>
+                  <div class="swiper-pagination"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- --------------------------------------------5.social--------------------------------------------- -->
+      <div class="c-section fadein c-section--social" style="background-color: rgba(215, 192, 174, 0.6);">
+        <div class="p-social">
+          <div class="c-section__main">
+            <div class="c-section__head">
+              <div class="c-section__title">CONTACT
+                <div class="c-section__title--underline"></div>
+              </div>
+            </div>
+            <div class="c-section__body">
+              <div class="p-social__block">
+                <div class="p-social__head">
+                  <!-- Contact me via -->
+                </div>
+                <div class="p-social__body">
+                  <div class="p-social__body--item"><img src="https://img.icons8.com/fluency/42/000000/gmail.png" />
+                  </div>
+                  <div class="p-social__body--item"><img
+                      src="https://img.icons8.com/fluency/42/000000/facebook-new.png" />
+                  </div>
+                  <div class="p-social__body--item"><img
+                      src="https://img.icons8.com/fluency/42/000000/instagram-new.png" />
+                  </div>
+                  <div class="p-social__body--item"><img src="https://img.icons8.com/fluency/42/000000/twitter.png" />
+                  </div>
+                  <!-- <div class="p-social__body--item"><img
+                      src="https://img.icons8.com/external-justicon-lineal-color-justicon/45/000000/external-twitter-social-media-justicon-lineal-color-justicon.png" />
+                  </div> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- --------------------------------------------5.conclude section-------------------------------- -->
+      <!-- <div class="c-section-80 c-bkg fadein" id="conclude">
+
+        <div class="c-section__main">
+
+          <div class="c-sectoin__body">
+            <div class="p-conclude">
+              <div class="p-conclude__block">
+
+                <div class="p-conclude__btn">
+                  <a class="c-btn" href="form.html">
+                    <div class="c-btn__inner">
+                      <div class="c-btn__icon">
+                        <div class="c-btn__icon--on"><img src="./assets/img/pc/btn_icon_click_default.png" alt=""></div>
+                        <div class="c-btn__icon--off"><img src="./assets/img/pc/btn_icon_click.png" alt=""></div>
+                      </div>
+                      <div class="c-btn__text">
+                        <div class="c-btn__text--main">EgoDiva呼び出しボタンを押す</div>
+                        <div class="c-btn__text--sub">※1営業日以内にオンラインから現れます</div>
+                      </div>
+                      <div class="c-btn__arrow"><img src="./assets/img/pc/play_circle.png" alt=""></div>
+                    </div>
+                  </a>
+                </div>
+                <div class="p-conclude__btn2">
+                  <a class="c-btn" href="ceoform.html">
+                    <div class="c-btn__inner--green">
+                      <div class="c-btn__icon">
+                        <div class="c-btn__icon--on"><img src="./assets/img/pc/btn_icon_ceo.png" alt=""></div>
+
+                      </div>
+                      <div class="c-btn__text">
+                        <div class="c-btn__text--main">社長呼び出しボタンを押す</div>
+                        <div class="c-btn__text--sub">※気まぐれに現れます</div>
+                      </div>
+                      <div class="c-btn__arrow"><img src="./assets/img/pc/play_circle_green.png" alt=""></div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> -->
+
+    </main>
+    <footer class="c-footer">
+      <div class="c-footer__block">
+        <!-- <ul class="c-footer__list">
+          <li class="c-footer__list--item"><a href="./index.html">HOME</a></li>
+          <li class="c-footer__list--item"><a href="#">運営会社</a></li>
+          <li class="c-footer__list--item"><a href="./form.html">お問合せ</a></li>
+        </ul> -->
+        <div class="c-footer__license">2022 © Allrights Reserved.</div>
+      </div>
+    </footer>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+
+    <script src="./assets/js/script.js"></script>
+
+
+  </div>
+</body>
+
+</html>
